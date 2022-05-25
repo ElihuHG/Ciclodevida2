@@ -7,6 +7,7 @@ import java.util.List;
 
 public class DatoModel extends ViewModel {
     List<Datos> lista = new ArrayList<>();
+    ArrayList<String> listaActual = new ArrayList<>();
 
     public DatoModel(){ }
 
@@ -20,5 +21,13 @@ public class DatoModel extends ViewModel {
 
     public List<Datos> getDatos(){
         return  lista;
+    }
+
+    public ArrayList<String> getListaActual() {
+        return listaActual;
+    }
+
+    public void setListaActual(ArrayList<String> listaActual) {
+        this.listaActual = listaActual;
     }
 }
